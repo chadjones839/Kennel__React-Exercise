@@ -6,11 +6,11 @@ Book 4 is part of the Nashville Software School Web Development course. This boo
 
 ### Chapter 1 - React Basics
 
-Install React DevTools
-create-react-app
-Kennel Single Component
-AnimalCard Child Component
-Kennel CSS
+- Install React DevTools
+- create-react-app
+- Kennel Single Component
+- AnimalCard Child Component
+- Kennel CSS
 
 
 #### Practice
@@ -19,12 +19,12 @@ The Kennel App needs to include locations, owners, and employees. Create static 
 
 ### Chapter 2 - React Routing
 
-install react-router-dom
-Home Component
-NavBar Component
-NavBar CSS
-ApplicationViews
-Updated Kennel Component
+- install react-router-dom
+- Home Component
+- NavBar Component
+- NavBar CSS
+- ApplicationViews
+- Updated Kennel Component
 
 #### Practice
 1. Create links in your navigation bar for `/locations`, `/employees`, and `/owners` paths.
@@ -33,11 +33,11 @@ Updated Kennel Component
 
 ### Chapter 3 - React Loading Data
 
-Populate API
-Data Query Module
-API Calls Module
-useEffect()
-useState()
+- Populate API
+- Data Query Module
+- API Calls Module
+- useEffect()
+- useState()
 
 #### Practice
 1. Add some example data for employees, locations and owners to `api/kennel.json`.
