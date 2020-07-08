@@ -1,0 +1,7 @@
+{
+    "animals": [
+        { "id": 1, "name": "Wyatt", "breed": "Australian Shepherd", "imageSource": "./wyatt.png"},
+        { "id": 2, "name": "Bosco", "breed": "Australian Shepherd", "imageSource": "./bosco.png"},
+        { "id": 3, "name": "Nippers", "breed": "Pitbull", "imageSource": "./dog1.jpg"}
+    ]
+}
