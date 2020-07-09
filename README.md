@@ -44,3 +44,25 @@ The Kennel App needs to include locations, owners, and employees. Create static 
 1. Create modules to query the database for employees, locations, and owners from your API.
 1. Create list components to handle calling the database modules.
 1. Display a static *designed* card for each section. We will get to displaying the correct data next.
+
+
+### Chapter 4 - React Component State and Props 
+
+- Refactor AnimalList render method with key value and State data.
+- Refactor AnimalCard render method to display props using dot notation.
+- Create CSS file for Animal
+
+#### Practice
+1. Update your application so that each section (locations, employees, owners) displays a list of cards with the API data.
+
+
+### Chapter 5 - Passing Functionality as Props
+
+- Implement a Delete function
+- Pass Delete Function to AnimalCard component
+- Implement Delete Link
+
+#### Practice
+1. Add the same functionality to the **`EmployeeList`** component so that employees can be fired!
+2. Add the same functionality to the **`OwnerList`** for when they decide they no longer want to be a customer.
+3. Add the same functionality to the **`LocationList`** for when a location closes down.

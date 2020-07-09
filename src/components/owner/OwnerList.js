@@ -15,6 +15,11 @@ const OwnerList = () => {
     });
   };
 
+  const deleteOwner = id => {
+    OwnerManager.deleteOwner(id)
+      .then(() => OwnerManager.getAllOwners().then(setOwners));
+  };
+
   // got the Owners from the API on the component's first render
   useEffect(() => {
     getOwners();
@@ -23,7 +28,11 @@ const OwnerList = () => {
   // Finally we use map() to "loop over" the Owners array to show a list of Owner cards
   return (
     <div className="ownerContainer-card">
-      {owners.map(owner => <OwnerCard key={owner.id} owner={owner}/>)}
+      {owners.map(owner => 
+        <OwnerCard 
+          key={owner.id} 
+          owner={owner}
+          deleteOwner={deleteOwner} />)}
     </div>
   );
 };

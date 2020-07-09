@@ -17,6 +17,7 @@ const LocationCard = (props) => {
           <br />
           <span className="cityStateZip">{props.location.cityStateZip}</span>
         </div>
+        <button type="button" onClick={() => props.deleteLocation(props.location.id)}>Close</button>
       </div>
     </div>
   );

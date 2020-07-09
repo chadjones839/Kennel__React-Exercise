@@ -17,19 +17,11 @@ const OwnerCard = (props) => {
           <span className="ownerInfo__dogBreed">Breed: {props.owner.breed}</span>
           <br />
           <br />
+          Contact:
+          <br />
+          <span className="ownerContact__phone">{props.owner.phoneNumber}</span>
         </div>
-        <div className="ownerInfo__lower">
-          <div className="OwnerBio">
-            Bio:
-            <br />
-            <span>{props.owner.bio}</span>
-          </div>
-          <div className="ownerContact">
-            Contact:
-            <br />
-            <span className="ownerContact__phone">{props.owner.phoneNumber}</span>
-          </div>
-        </div>
+        <button type="button" onClick={() => props.deleteOwner(props.owner.id)}>Remove</button>
       </div>
     </div>
   );
