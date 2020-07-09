@@ -1,12 +1,22 @@
 import React from "react";
 
-const LocationCard = () => {
+const LocationCard = (props) => {
   return (
     <div className="card">
       <div className="card-content">
-        <h2>
-          <span className="card-locationName">Nashville, TN</span>
-        </h2>
+        <div className="locationHeader">
+          <picture>
+              <img src={require(`${props.location.image}`)} alt={props.location.name} className="locationImage" />
+          </picture>
+          <h2>
+            <span className="card-locationName">{props.location.name}</span>
+          </h2>
+        </div>
+        <div className="locationAddress">
+          <span className="street">{props.location.address}</span>
+          <br />
+          <span className="cityStateZip">{props.location.cityStateZip}</span>
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,115 @@
 {
     "animals": [
-        { "id": 1, "name": "Wyatt", "breed": "Australian Shepherd", "imageSource": "./wyatt.png"},
-        { "id": 2, "name": "Bosco", "breed": "Australian Shepherd", "imageSource": "./bosco.png"},
-        { "id": 3, "name": "Nippers", "breed": "Pitbull", "imageSource": "./dog1.jpg"}
+        { 
+            "id": 1, 
+            "name": "Wyatt", 
+            "breed": "Australian Shepherd", 
+            "image": "./wyatt.png"
+        },
+        { 
+            "id": 2, 
+            "name": "Bosco", 
+            "breed": "Australian Shepherd", 
+            "image": "./bosco.png"
+        },
+        { 
+            "id": 3, 
+            "name": "Nippers", 
+            "breed": "Pitbull", 
+            "image": "./dog1.jpg"
+        }
+    ],
+    "locations": [
+        { 
+            "id": 1, 
+            "name": "Broadway Dog Kennel & Pub", 
+            "address": "34 Broadway St.", 
+            "cityStateZip": "Nashville, TN 37203",
+            "image": "./dogBar.jpg"
+        },
+        { 
+            "id": 2, 
+            "name": "Nashville Dog Kennel & Spa", 
+            "address": "234 Cleveland St.", 
+            "cityStateZip": "E. Nashville, TN 37206",
+            "image": "./dogPool.jpg"
+        },
+        { 
+            "id": 3, 
+            "name": "Nashville Dog Resort", 
+            "address": "1002 Lafayette St.", 
+            "cityStateZip": "S. Nashville, TN 37210",
+            "image": "./dogResort.jpg"
+        }
+    ],
+    "employees": [
+        { 
+            "id": 1, 
+            "name": "Harvey Slotnick", 
+            "title": "Trainer", 
+            "years": "7",
+            "image": "./harvey.jpg"
+        },
+        { 
+            "id": 2, 
+            "name": "Charlie Kelly", 
+            "title": "Illiterate Janitor", 
+            "years": "5",
+            "image": "./chollie.jpeg"
+        },
+        { 
+            "id": 3, 
+            "name": "Rickety Cricket", 
+            "title": "Dog Whisperer", 
+            "years": "1",
+            "image": "./cricket.png"
+        }
+    ],
+    "owners": [
+        { 
+            "id": 1, 
+            "name": "Harlan Pepper",
+            "dog": "Hubert",
+            "breed": "Bloodhound", 
+            "bio": "The Southern owner of a fishing goods store and an aspiring ventriloquist, he is an affable man who prides himself on being able to name every type of nut. Pepper's family has raised a variety of hounds for generations, and Harlan continues the tradition by raising bloodhounds.", 
+            "phoneNumber": "615.345.4642",
+            "image": "./harlan.jpg"
+        },
+        { 
+            "id": 2, 
+            "name": "Gerry & Cookie Fleck", 
+            "dog": "Winkie",
+            "breed": "Norwich Terrier",
+            "bio": "After their Norwich Terrier Winkie wins the Mayflower dog show, Gerry and Cookie Fleck recorded a number of terrier-themed songs such as 'God Loves a Terrier' and 'Terrier Style'.", 
+            "phoneNumber": "615.356.1927",
+            "image": "./flecks.jpg"
+        },
+        { 
+            "id": 3, 
+            "name": "Meg and Hamilton Swan", 
+            "dog": "Beatrice",
+            "breed": " Weimaraner",
+            "bio": "Meg and Hamilton met at Starbucks. Not at the same Starbucks but they saw each other at different Starbucks across the street from each other.", 
+            "phoneNumber": "615.357.3458",
+            "image": "./swans.jpg"
+        },
+        { 
+            "id": 4, 
+            "name": "Scott Donlan & Stefan Vanderhoof", 
+            "dog": "Miss Agnes",
+            "breed": "Shih Tzu",
+            "bio": "A campy gay couple, they take great pride in their dog, and are confident that she will win the competition. They share a love of old movies and enjoy making fun of Christy Cummings, but are friendly to the other competitors, especially the Flecks.", 
+            "phoneNumber": "615.227.0374",
+            "image": "./donlan.jpg"
+        },
+        { 
+            "id": 5, 
+            "name": "Sherri Ann & Leslie Ward Cabot", 
+            "dog": "Rhapsody In White",
+            "breed": "Standard Poodle",
+            "bio": "A two-time past winner of the show, Sherri Ann is a plump, buxom, overly-made-up trophy wife to the elderly Leslie, her sugar daddy. They are assisted by trainer Christy Cummings, who makes sure the dog is truly ready for the show, while Sherri Ann fixates on giving Christy a makeover and Leslie remains utterly oblivious.", 
+            "phoneNumber": "615.227.0374",
+            "image": "./cabot.jpg"
+        }
     ]
 }

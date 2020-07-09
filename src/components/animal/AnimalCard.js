@@ -5,7 +5,7 @@ const AnimalCard = (props) => {
     <div className="card">
       <div className="card-content">
         <picture>
-          <img src={props.animal.imageSource} alt={props.animal.name} />
+          <img src={require(`${props.animal.image}`)} alt={props.animal.name} className="animalImage" />
         </picture>
         <h3>
           Name: <span className="card-petname">{props.animal.name}</span>
@@ -17,5 +17,3 @@ const AnimalCard = (props) => {
 };
 
 export default AnimalCard;
-
-// {props.animal.image}

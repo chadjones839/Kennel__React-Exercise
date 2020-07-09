@@ -3,6 +3,7 @@ import NavBar from "./nav/NavBar";
 import ApplicationViews from "./ApplicationViews";
 
 import "./Kennel.css";
+import "./Owner.css";
 
 const Kennel = () => {
   return (

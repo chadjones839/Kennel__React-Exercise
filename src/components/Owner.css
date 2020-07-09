@@ -1,0 +1,45 @@
+picture {
+    display: flex;
+    justify-content: center;
+}
+  
+.ownerImage {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    border-radius: 2%;
+    padding: 0;
+}
+  
+.section-content {
+    padding: 1.4em;
+}
+  
+.ownerContainer-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+  
+.ownerCard-content {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+    height: 100%;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.ownerHeader {
+    height: 320px;
+}
+
+.ownerInfo__lower {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  

@@ -10,7 +10,7 @@ const AnimalList = () => {
   const getAnimals = () => {
     // After the data comes back from the API, we
     //  use the setAnimals function to update state
-    return AnimalManager.getAll().then(animalsFromAPI => {
+    return AnimalManager.getAllAnimals().then(animalsFromAPI => {
       setAnimals(animalsFromAPI)
     });
   };
