@@ -8,7 +8,7 @@ const AnimalCard = (props) => {
           <img src={require(`${props.animal.image}`)} alt={props.animal.name} className="animalImage" />
         </picture>
         <h3>
-          Name: <span className="card-petname">{props.animal.name}</span>
+          Name: <span className="content-petname">{props.animal.name}</span>
         </h3>
         <p>Breed: {props.animal.breed}</p>
       </div>

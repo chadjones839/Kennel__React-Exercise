@@ -14,8 +14,8 @@
         },
         { 
             "id": 3, 
-            "name": "Nippers", 
-            "breed": "Pitbull", 
+            "name": "Dog", 
+            "breed": "Mutt", 
             "image": "./dog1.jpg"
         }
     ],
