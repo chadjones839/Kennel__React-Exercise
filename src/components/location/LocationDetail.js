@@ -4,9 +4,9 @@ import './LocationDetail.css'
 
 const LocationDetail = props => {
   const [location, setLocation] = useState({ name: "", address: "", cityStateZip: "", image: "" });
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    //get(id) from LocationManager and hang on to the data; put it into state
     LocationManager.getLocation(props.locationId)
       .then(location => {
         setLocation({
@@ -15,8 +15,16 @@ const LocationDetail = props => {
             cityStateZip: location.cityStateZip,
             image: location.image
         });
+        setIsLoading(false);
       });
   }, [props.locationId]);
+
+  const handleDelete = () => {
+    setIsLoading(true);
+    LocationManager.deleteLocation(props.locationId).then(() =>
+      props.history.push("/locations")
+    );
+  };
 
   return (
     <div className="card">
@@ -37,6 +45,9 @@ const LocationDetail = props => {
           <br />
           <span className="cityStateZip">{location.cityStateZip}</span>
         </div>
+        <button type="button" disabled={isLoading} onClick={handleDelete}>
+          Close
+        </button>
       </div>
     </div>
   );
