@@ -5,6 +5,7 @@ import AnimalList from "./animal/AnimalList";
 import AnimalDetail from "./animal/AnimalDetail";
 //only include these once they are built - previous practice exercise
 import LocationList from "./location/LocationList";
+import LocationDetail from "./location/LocationDetail";
 import EmployeeList from "./employee/EmployeeList";
 import OwnerList from "./owner/OwnerList";
 
@@ -32,10 +33,17 @@ const ApplicationViews = () => {
       }} 
       />
       <Route
+        exact
         path="/locations"
         render={props => {
           return <LocationList />;
         }}
+      />
+      <Route 
+      path="/locations/:locationId(\d+)" 
+      render={(props) => {
+        return <LocationDetail locationId={parseInt(props.match.params.locationId)} />
+      }} 
       />
       <Route
         path="/employees"

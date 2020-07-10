@@ -10,9 +10,9 @@ const AnimalDetail = props => {
     AnimalManager.getAnimal(props.animalId)
       .then(animal => {
         setAnimal({
-          name: animal.name,
-          breed: animal.breed,
-          image: animal.image
+            name: animal.name,
+            breed: animal.breed,
+            image: animal.image
         });
       });
   }, [props.animalId]);
@@ -20,10 +20,12 @@ const AnimalDetail = props => {
   return (
     <div className="card">
       <div className="card-content">
-        {(animal.image !== "") &&
+        {
+        (animal.image !== "") &&
         <picture>
           <img src={require(`${animal.image}`)} alt={animal.name} className="animalImage" />
-        </picture>}
+        </picture>
+        }
         <h3>Name: <span className="content-petname" style={{ color: 'darkslategrey' }}>{animal.name}</span></h3>
         <p>Breed: {animal.breed}</p>
       </div>
