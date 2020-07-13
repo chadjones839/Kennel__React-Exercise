@@ -28,6 +28,13 @@
       "image": "./dogBar.jpg"
     },
     {
+      "id": 2,
+      "name": "Nashville Dog Kennel & Spa",
+      "address": "234 Cleveland St.",
+      "cityStateZip": "E. Nashville, TN 37206",
+      "image": "./dogPool.jpg"
+    },
+    {
       "id": 3,
       "name": "Nashville Dog Resort",
       "address": "1002 Lafayette St.",

@@ -3,7 +3,7 @@ import React from "react";
 import Home from "./home/Home";
 import AnimalList from "./animal/AnimalList";
 import AnimalDetail from "./animal/AnimalDetail";
-//only include these once they are built - previous practice exercise
+import AnimalForm from './animal/AnimalForm'
 import LocationList from "./location/LocationList";
 import LocationDetail from "./location/LocationDetail";
 import EmployeeList from "./employee/EmployeeList";
@@ -22,15 +22,24 @@ const ApplicationViews = () => {
       <Route
         exact
         path="/animals"
-        render={props => {
-          return <AnimalList />;
+        render={(props) => {
+          return <AnimalList 
+          {...props} />;
         }}
       />
       <Route 
-      path="/animals/:animalId(\d+)" 
-      render={(props) => {
-        return <AnimalDetail animalId={parseInt(props.match.params.animalId)}
-        {...props} />
+        exact
+        path="/animals/:animalId(\d+)" 
+        render={(props) => {
+          return <AnimalDetail animalId={parseInt(props.match.params.animalId)}
+          {...props} />
+      }} 
+      />
+      <Route 
+        path="/animals/new" 
+        render={(props) => {
+          return <AnimalForm 
+          {...props} />
       }} 
       />
       <Route
@@ -40,11 +49,12 @@ const ApplicationViews = () => {
           return <LocationList />;
         }}
       />
-      <Route 
-      path="/locations/:locationId(\d+)" 
-      render={(props) => {
-        return <LocationDetail locationId={parseInt(props.match.params.locationId)}
-        {...props} />
+      <Route
+        exact 
+        path="/locations/:locationId(\d+)" 
+        render={(props) => {
+          return <LocationDetail locationId={parseInt(props.match.params.locationId)}
+          {...props} />
       }} 
       />
       <Route
