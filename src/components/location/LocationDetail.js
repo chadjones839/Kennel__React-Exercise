@@ -3,7 +3,7 @@ import LocationManager from '../../modules/LocationManager';
 import './LocationDetail.css'
 
 const LocationDetail = props => {
-  const [location, setLocation] = useState({ name: "", address: "", cityStateZip: "", image: "" });
+  const [location, setLocation] = useState({ name: "", address: "", cityStateZip: "", locationImage: "" });
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -13,7 +13,7 @@ const LocationDetail = props => {
             name: location.name,
             address: location.breed,
             cityStateZip: location.cityStateZip,
-            image: location.image
+            image: location.locationImage
         });
         setIsLoading(false);
       });
@@ -33,7 +33,7 @@ const LocationDetail = props => {
           {
             (location.image !== "") &&
             <picture>
-              <img src={require(`${location.image}`)} alt={location.name} className="locationImage" />
+              <img src={require(`./dogResort.jpg`)} alt={location.name} className="locationImage" />
             </picture>
           }
           <h2>

@@ -41,4 +41,8 @@ picture {
     flex-direction: column;
     justify-content: space-between;
 }
+
+.ownerButtons {
+    margin-top: 20px;
+}
   

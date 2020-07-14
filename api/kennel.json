@@ -4,19 +4,37 @@
       "id": 1,
       "name": "Wyatt",
       "breed": "Australian Shepherd",
-      "image": "./wyatt.png"
+      "image": "wyatt.png"
     },
     {
       "id": 2,
       "name": "Bosco",
       "breed": "Australian Shepherd",
-      "image": "./bosco.png"
+      "image": "bosco.png"
     },
     {
       "id": 3,
       "name": "Dog",
       "breed": "Mutt",
-      "image": "./dog1.jpg"
+      "image": "dog1.jpg"
+    },
+    {
+      "name": "Kano-Man",
+      "breed": "Pitbull",
+      "image": "kayno.png",
+      "id": 4
+    },
+    {
+      "name": "Trig-Daddy",
+      "breed": "Pitbull",
+      "image": "trigDrool.png",
+      "id": 5
+    },
+    {
+      "name": "Fake",
+      "breed": "Pitbull",
+      "image": "trigDrool.png",
+      "id": 6
     }
   ],
   "locations": [
@@ -25,21 +43,21 @@
       "name": "Broadway Dog Kennel & Pub",
       "address": "34 Broadway St.",
       "cityStateZip": "Nashville, TN 37203",
-      "image": "./dogBar.jpg"
+      "locationImage": "dogBar.jpg"
     },
     {
       "id": 2,
       "name": "Nashville Dog Kennel & Spa",
       "address": "234 Cleveland St.",
       "cityStateZip": "E. Nashville, TN 37206",
-      "image": "./dogPool.jpg"
+      "locationImage": "dogPool.jpg"
     },
     {
       "id": 3,
       "name": "Nashville Dog Resort",
       "address": "1002 Lafayette St.",
       "cityStateZip": "S. Nashville, TN 37210",
-      "image": "./dogResort.jpg"
+      "locationImage": "dogResort.jpg"
     }
   ],
   "employees": [
@@ -48,63 +66,63 @@
       "name": "Harvey Slotnick",
       "title": "Trainer",
       "years": "7",
-      "image": "./harvey.jpg"
+      "image": "harvey.jpg"
     },
     {
       "id": 2,
       "name": "Charlie Kelly",
       "title": "Illiterate Janitor",
       "years": "5",
-      "image": "./chollie.jpeg"
+      "image": "chollie.jpeg"
     },
     {
       "id": 3,
       "name": "Rickety Cricket",
       "title": "Dog Whisperer",
-      "years": "1",
-      "image": "./cricket.png"
+      "years": "2",
+      "image": "cricket.png"
     }
   ],
   "owners": [
     {
       "id": 1,
       "name": "Harlan Pepper",
-      "dog": "Hubert",
-      "breed": "Bloodhound",
+      "ownerDog": "Hubert",
+      "ownerBreed": "Bloodhound",
       "phoneNumber": "615.345.4642",
-      "image": "./harlan.jpg"
+      "image": "harlan.jpg"
     },
     {
       "id": 2,
       "name": "Gerry & Cookie Fleck",
-      "dog": "Winkie",
-      "breed": "Norwich Terrier",
+      "ownerDog": "Winkie",
+      "ownerBreed": "Norwich Terrier",
       "phoneNumber": "615.356.1927",
-      "image": "./flecks.jpg"
+      "image": "flecks.jpg"
     },
     {
       "id": 3,
       "name": "Meg and Hamilton Swan",
-      "dog": "Beatrice",
-      "breed": " Weimaraner",
+      "ownerDog": "Beatrice",
+      "ownerBreed": " Weimaraner",
       "phoneNumber": "615.357.3458",
-      "image": "./swans.jpg"
+      "image": "swans.jpg"
     },
     {
       "id": 4,
       "name": "Scott Donlan & Stefan Vanderhoof",
-      "dog": "Miss Agnes",
-      "breed": "Shih Tzu",
+      "ownerDog": "Miss Agnes",
+      "ownerBreed": "Shih Tzu",
       "phoneNumber": "615.227.0374",
-      "image": "./donlan.jpg"
+      "image": "donlan.jpg"
     },
     {
       "id": 5,
       "name": "Sherri Ann & Leslie Ward Cabot",
-      "dog": "Rhapsody In White",
-      "breed": "Standard Poodle",
+      "ownerDog": "Rhapsody In White",
+      "ownerBreed": "Standard Poodle",
       "phoneNumber": "615.227.0374",
-      "image": "./cabot.jpg"
+      "image": "cabot.jpg"
     }
   ]
 }

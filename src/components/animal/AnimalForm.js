@@ -47,13 +47,13 @@ const AnimalForm = props => {
               placeholder="Breed"
             />
             <label htmlFor="breed">Breed</label>
-            {/* <input
-              type="file"
-              required
+            <input
+              type="text"
               onChange={handleFieldChange}
               id="image"
+              placeholder="dogDefault.png"
             />
-            <label htmlFor="picture">Picture</label> */}
+            <label htmlFor="picture">Picture</label>
           </div>
           <div className="alignRight">
             <button
