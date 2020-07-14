@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import OwnerManager from "../../modules/OwnerManager"
-// import "./OwnerForm.css"
+import "./styles/OwnerForm.css"
 
 const OwnerEditForm = props => {
   const [owner, setOwner] = useState({ name: "", ownerDog: "", ownerBreed: "", phoneNumber: "", image: "" });

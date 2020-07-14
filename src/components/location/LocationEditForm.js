@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react"
 import LocationManager from "../../modules/LocationManager"
-// import "./LocationForm.css"
+import "./styles/LocationForm.css"
 
 const LocationEditForm = props => {
-  const [location, setLocation] = useState({ name: "", address: "", cityStateZip: "", image: "" });
+  const [location, setLocation] = useState({ name: "", address1: "", address2: "", image: "" });
   const [isLoading, setIsLoading] = useState(false);
 
   const handleFieldChange = evt => {
@@ -20,8 +20,8 @@ const LocationEditForm = props => {
     const editedLocation = {
       id: props.match.params.locationId,
       name: location.name,
-      address: location.address,
-      cityStateZip: location.cityStateZip,
+      address1: location.address1,
+      address2: location.address2,
       image: location.image
     };
 
@@ -57,20 +57,20 @@ const LocationEditForm = props => {
               required
               className="form-control"
               onChange={handleFieldChange}
-              id="address"
+              id="address1"
               value={location.address}
             />
-            <label htmlFor="address">Address</label>
+            <label htmlFor="address1">Address</label>
 
             <input
               type="text"
               required
               className="form-control"
               onChange={handleFieldChange}
-              id="cityStateZip"
-              value={location.cityStateZip}
+              id="address2"
+              value={location.address2}
             />
-            <label htmlFor="cityStateZip">City, State, Zip</label>
+            <label htmlFor="address2">City, State, Zip</label>
 
             <input
               type="text"
@@ -78,7 +78,7 @@ const LocationEditForm = props => {
               className="form-control"
               onChange={handleFieldChange}
               id="image"
-              value={location.image}
+              value={location.locationImage}
             />
             <label htmlFor="image">Image</label>
           </div>

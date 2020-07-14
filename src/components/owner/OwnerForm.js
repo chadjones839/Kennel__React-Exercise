@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import OwnerManager from '../../modules/OwnerManager';
-import './OwnerForm.css'
+import './styles/OwnerForm.css'
 
 const OwnerForm = props => {
   const [owner, setOwner] = useState({ name: "", ownerDog: "", ownerBreed: "", phoneNumber: "", image: "" });
@@ -71,7 +71,7 @@ const OwnerForm = props => {
               id="image"
               placeholder="userIcon.png"
             />
-            <label htmlFor="picture">Picture</label>
+            <label htmlFor="image">Picture</label>
           </div>
           <div className="alignRight">
             <button

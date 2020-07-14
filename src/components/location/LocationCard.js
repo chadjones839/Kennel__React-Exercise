@@ -7,25 +7,25 @@ const LocationCard = (props) => {
       <div className="card-content">
         <div className="locationHeader">
           <picture>
-              <img src={require(`./dogResort.jpg`)} alt={props.location.name} className="locationImage" />
+              <img src={require(`./images/${props.locations.image}`)} alt={props.locations.name} className="locationImage" />
           </picture>
           <h2>
-            <span className="card-locationName">{props.location.name}</span>
+            <span className="card-locationName">{props.locations.name}</span>
           </h2>
         </div>
         <div className="locationAddress">
-          <span className="street">{props.location.address}</span>
+          <span className="street">{props.locations.address1}</span>
           <br />
-          <span className="cityStateZip">{props.location.cityStateZip}</span>
+          <span className="cityStateZip">{props.locations.address2}</span>
         </div>
-        <Link to={`/locations/${props.location.id}`}>
+        <Link to={`/locations/${props.locations.id}`}>
           <button>Details</button>
         </Link>
         <button type="button"
-          onClick={() => props.history.push(`/locations/${props.location.id}/edit`)}>
+          onClick={() => props.history.push(`/locations/${props.locations.id}/edit`)}>
           Edit
         </button>
-        <button type="button" onClick={() => props.deleteLocation(props.location.id)}>Close</button>
+        <button type="button" onClick={() => props.deleteLocation(props.locations.id)}>Close</button>
       </div>
     </div>
   );
@@ -33,4 +33,3 @@ const LocationCard = (props) => {
 
 export default LocationCard;
 
-//${props.location.locationImage}

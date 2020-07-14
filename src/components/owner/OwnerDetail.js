@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import OwnerManager from '../../modules/OwnerManager';
-// import './OwnerDetail.css'
+import './styles/OwnerDetail.css'
 
 const OwnerDetail = props => {
   const [owner, setOwner] = useState({ name: "", ownerDog: "", ownerBreed: "", phoneNumber: "", image: "" });
@@ -35,7 +35,7 @@ const OwnerDetail = props => {
         {
         (owner.image !== "") &&
         <picture>
-          <img src={require(`./${owner.image}`)} alt={owner.name} className="owner" />
+          <img src={require(`./images/${owner.image}`)} alt={owner.name} className="owner" />
         </picture>
         }
         <h3>Client Name:<br /><span className="content-petname" style={{ color: 'darkslategrey' }}>{owner.name}</span></h3>

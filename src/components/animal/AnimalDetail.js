@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import AnimalManager from '../../modules/AnimalManager';
-import './AnimalDetail.css'
+import './styles/AnimalDetail.css'
 
 const AnimalDetail = props => {
   const [animal, setAnimal] = useState({ name: "", breed: "", image: "" });
@@ -33,7 +33,7 @@ const AnimalDetail = props => {
         {
         (animal.image !== "") &&
         <picture>
-          <img src={require(`./${animal.image}`)} alt={animal.name} className="animalImage" />
+          <img src={require(`./images/${animal.image}`)} alt={animal.name} className="animalImage" />
         </picture>
         }
         <h3>Name: <span className="content-petname" style={{ color: 'darkslategrey' }}>{animal.name}</span></h3>

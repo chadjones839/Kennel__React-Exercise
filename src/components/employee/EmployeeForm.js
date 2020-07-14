@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import EmployeeManager from '../../modules/EmployeeManager';
-import './EmployeeForm.css'
+import './styles/EmployeeForm.css'
 
 const EmployeeForm = props => {
   const [employee, setEmployee] = useState({ name: "", title: "", years: "", image: "" });
@@ -18,7 +18,7 @@ const EmployeeForm = props => {
       window.alert("Please fill out all fields");
     } else {
       setIsLoading(true);
-      // Create the Employee and redirect user to Employee list
+
       EmployeeManager.postEmployee(employee)
         .then(() => props.history.push("/employees"));
     }

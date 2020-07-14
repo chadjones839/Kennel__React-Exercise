@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import AnimalManager from '../../modules/AnimalManager';
-import './AnimalForm.css'
+import './styles/AnimalForm.css'
 
 const AnimalForm = props => {
   const [animal, setAnimal] = useState({ name: "", breed: "", image: ""});

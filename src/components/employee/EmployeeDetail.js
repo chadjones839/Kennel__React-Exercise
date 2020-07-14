@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import EmployeeManager from '../../modules/EmployeeManager';
-// import './EmployeeDetail.css'
+import './styles/EmployeeDetail.css'
 
 const EmployeeDetail = props => {
   const [employee, setEmployee] = useState({ name: "", title: "", years: "", image: "" });
@@ -34,7 +34,7 @@ const EmployeeDetail = props => {
         {
         (employee.image !== "") &&
         <picture>
-          <img src={require(`./${employee.image}`)} alt={employee.name} className="employeeImage" />
+          <img src={require(`./images/${employee.image}`)} alt={employee.name} className="employeeImage" />
         </picture>
         }
         <h3>Name: <span className="content-petname" style={{ color: 'darkslategrey' }}>{employee.name}</span></h3>

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import LocationManager from '../../modules/LocationManager';
-import './LocationForm.css'
+import './styles/LocationForm.css'
 
 const LocationForm = props => {
-  const [location, setLocation] = useState({ name: "", address: "", cityStateZip: "", locationImage: "" });
+  const [location, setLocation] = useState({ name: "", address1: "", address2: "", image: "" });
   const [isLoading, setIsLoading] = useState(false);
 
   const handleFieldChange = evt => {
@@ -14,7 +14,7 @@ const LocationForm = props => {
 
   const constructNewLocation = evt => {
     evt.preventDefault();
-    if (location.name === "" || location.address === "" || location.cityStateZip === "" || location.locationImage === "") {
+    if (location.name === "" || location.address1 === "" || location.address2 === "" || location.image === "") {
       window.alert("Please fill out all fields");
     } else {
       setIsLoading(true);
@@ -42,19 +42,19 @@ const LocationForm = props => {
               type="text"
               required
               onChange={handleFieldChange}
-              id="address"
-              placeholder="address"
+              id="address1"
+              placeholder="Street"
             />
-            <label htmlFor="address">Address</label>
+            <label htmlFor="address1">Address</label>
 
             <input
               type="text"
               required
               onChange={handleFieldChange}
-              id="LocationBreed"
+              id="address2"
               placeholder="Nashville TN, 37013"
             />
-            <label htmlFor="LocationBreed">City, State, and Zip</label>
+            <label htmlFor="address2">City, State, and Zip</label>
 
             <input
               type="text"
@@ -62,7 +62,7 @@ const LocationForm = props => {
               id="image"
               placeholder="defaultLocation.png"
             />
-            <label htmlFor="picture">Picture</label>
+            <label htmlFor="image">Picture</label>
           </div>
           <div className="alignRight">
             <button

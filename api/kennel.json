@@ -29,35 +29,29 @@
       "breed": "Pitbull",
       "image": "trigDrool.png",
       "id": 5
-    },
-    {
-      "name": "Fake",
-      "breed": "Pitbull",
-      "image": "trigDrool.png",
-      "id": 6
     }
   ],
   "locations": [
     {
       "id": 1,
       "name": "Broadway Dog Kennel & Pub",
-      "address": "34 Broadway St.",
-      "cityStateZip": "Nashville, TN 37203",
-      "locationImage": "dogBar.jpg"
+      "address1": "34 Broadway St.",
+      "address2": "Nashville, TN 37203",
+      "image": "dogBar.jpg"
     },
     {
       "id": 2,
       "name": "Nashville Dog Kennel & Spa",
-      "address": "234 Cleveland St.",
-      "cityStateZip": "E. Nashville, TN 37206",
-      "locationImage": "dogPool.jpg"
+      "address1": "234 Cleveland St.",
+      "address2": "E. Nashville, TN 37206",
+      "image": "dogPool.jpg"
     },
     {
       "id": 3,
       "name": "Nashville Dog Resort",
-      "address": "1002 Lafayette St.",
-      "cityStateZip": "S. Nashville, TN 37210",
-      "locationImage": "dogResort.jpg"
+      "address1": "1002 Lafayette St.",
+      "address2": "S. Nashville, TN 37210",
+      "image": "dogResort.jpg"
     }
   ],
   "employees": [

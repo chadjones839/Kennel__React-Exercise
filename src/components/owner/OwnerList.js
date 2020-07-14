@@ -29,7 +29,6 @@ const OwnerList = (props) => {
             Add New Client
         </button>
       </section>
-      <div className="container-cards"></div>
       <div className="ownerContainer-card">
         {owners.map(owner => 
           <OwnerCard 

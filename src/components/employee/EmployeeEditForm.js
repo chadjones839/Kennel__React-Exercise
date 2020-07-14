@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import EmployeeManager from "../../modules/EmployeeManager"
-// import "./EmployeeForm.css"
+import './styles/EmployeeForm.css'
 
 const EmployeeEditForm = props => {
   const [employee, setEmployee] = useState({ name: "", title: "", years: "", image: "" });
