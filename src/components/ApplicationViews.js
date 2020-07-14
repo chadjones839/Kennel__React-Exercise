@@ -12,11 +12,13 @@ import LocationList from "./location/LocationList";
 import LocationDetail from "./location/LocationDetail";
 import LocationForm from './location/LocationForm';
 import LocationEditForm from './location/LocationEditForm';
+import LocationWithEmployees from "./location/LocationWithEmployees";
 
 import EmployeeList from "./employee/EmployeeList";
-import EmployeeDetail from "./employee/EmployeeDetail";
+// import EmployeeDetail from "./employee/EmployeeDetail";
 import EmployeeForm from './employee/EmployeeForm';
 import EmployeeEditForm from "./employee/EmployeeEditForm";
+import EmployeeWithAnimals from "./employee/EmployeeWithAnimals";
 
 import OwnerList from "./owner/OwnerList";
 import OwnerDetail from "./owner/OwnerDetail";
@@ -113,7 +115,14 @@ const ApplicationViews = () => {
           } else {
             return <Redirect to="/login" />
           }
-      }} />
+      }} 
+      />
+      <Route 
+        path="/locations/:locationId(\d+)/details" 
+        render={(props) => {
+          return <LocationWithEmployees {...props} />
+      }} 
+      />
       <Route
         exact
         path="/employees"
@@ -124,14 +133,6 @@ const ApplicationViews = () => {
             return <Redirect to="/login" />
           }
         }}
-      />
-      <Route 
-        exact
-        path="/employees/:employeeId(\d+)" 
-        render={(props) => {
-          return <EmployeeDetail employeeId={parseInt(props.match.params.employeeId)}
-          {...props} />
-      }} 
       />
       <Route 
         exact
@@ -150,6 +151,13 @@ const ApplicationViews = () => {
           } else {
             return <Redirect to="/login" />
           }
+      }} />
+      <Route 
+        exact
+        path="/employees/:employeeId(\d+)/details" 
+        render={(props) => {
+          return <EmployeeWithAnimals 
+          {...props} />
       }} />
       <Route
         exact

@@ -3,17 +3,17 @@ import LocationManager from '../../modules/LocationManager';
 import './styles/LocationDetail.css'
 
 const LocationDetail = props => {
-  const [location, setLocation] = useState({ name: "", address: "", cityStateZip: "", locationImage: "" });
+  const [location, setLocation] = useState({ name: "", address1: "", address2: "", image: "" });
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     LocationManager.getLocation(props.locationId)
-      .then(location => {
+      .then(locations => {
         setLocation({
-            name: location.name,
-            address: location.breed,
-            cityStateZip: location.cityStateZip,
-            image: location.locationImage
+            name: locations.name,
+            address1: locations.breed,
+            address2: locations.cityStateZip,
+            image: locations.locationImage
         });
         setIsLoading(false);
       });

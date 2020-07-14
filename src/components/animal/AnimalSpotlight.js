@@ -22,7 +22,7 @@ const AnimalSpotlight = props => {
         <picture>
           <img src={require(`./images/${animal.image}`)} alt={animal.name} className="animalImage" />
         </picture>
-        }
+      }
       <div>
         <h3>{animal.name}</h3>
         <p>{animal.breed}</p>

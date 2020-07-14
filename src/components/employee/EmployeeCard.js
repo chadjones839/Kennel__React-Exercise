@@ -13,7 +13,7 @@ const EmployeeCard = (props) => {
             <span className="card-employeeName">{props.employee.name}</span>
           </h2>
         </div>
-        <Link to={`/employees/${props.employee.id}`}>
+        <Link to={`/employees/${props.employee.id}/details`}>
           <button>Details</button>
         </Link>
         <button type="button"

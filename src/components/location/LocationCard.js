@@ -18,7 +18,7 @@ const LocationCard = (props) => {
           <br />
           <span className="cityStateZip">{props.locations.address2}</span>
         </div>
-        <Link to={`/locations/${props.locations.id}`}>
+        <Link to={`/locations/${props.locations.id}/details`}>
           <button>Details</button>
         </Link>
         <button type="button"

@@ -81,6 +81,9 @@ const LocationEditForm = props => {
               value={location.locationImage}
             />
             <label htmlFor="image">Image</label>
+
+            
+
           </div>
           <div className="alignRight">
             <button

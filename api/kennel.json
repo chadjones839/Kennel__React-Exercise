@@ -4,31 +4,36 @@
       "id": 1,
       "name": "Wyatt",
       "breed": "Australian Shepherd",
-      "image": "wyatt.png"
+      "image": "wyatt.png",
+      "employeeId": 1
     },
     {
       "id": 2,
       "name": "Bosco",
       "breed": "Australian Shepherd",
-      "image": "bosco.png"
+      "image": "bosco.png",
+      "employeeId": 2
     },
     {
       "id": 3,
       "name": "Dog",
       "breed": "Mutt",
-      "image": "dog1.jpg"
+      "image": "dog1.jpg",
+      "employeeId": 2
     },
     {
       "name": "Kano-Man",
       "breed": "Pitbull",
       "image": "kayno.png",
-      "id": 4
+      "id": 4,
+      "employeeId": 3
     },
     {
       "name": "Trig-Daddy",
       "breed": "Pitbull",
       "image": "trigDrool.png",
-      "id": 5
+      "id": 5,
+      "employeeId": 3
     }
   ],
   "locations": [
@@ -60,21 +65,32 @@
       "name": "Harvey Slotnick",
       "title": "Trainer",
       "years": "7",
-      "image": "harvey.jpg"
+      "image": "harvey.jpg",
+      "locationId": 2
     },
     {
       "id": 2,
       "name": "Charlie Kelly",
       "title": "Illiterate Janitor",
       "years": "5",
-      "image": "chollie.jpeg"
+      "image": "chollie.jpeg",
+      "locationId": 1
     },
     {
       "id": 3,
       "name": "Rickety Cricket",
       "title": "Dog Whisperer",
       "years": "2",
-      "image": "cricket.png"
+      "image": "cricket.png",
+      "locationId": 3
+    },
+    {
+      "name": "Ted LeBaunge",
+      "title": "Caretaker",
+      "years": "2",
+      "image": "userIcon.png",
+      "id": 4,
+      "locationId": 2
     }
   ],
   "owners": [
