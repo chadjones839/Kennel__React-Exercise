@@ -28,14 +28,15 @@ const AnimalList = (props) => {
   // Finally we use map() to "loop over" the animals array to show a list of animal cards
   return (
     <>
+    
       <section className="section-content">
         <button type="button"
-            className="btn"
+            className="admitbtn"
             onClick={() => {props.history.push("/animals/new")}}>
             Admit Animal
         </button>
       </section>
-      <div className="container-cards">
+      <div className="animalContainer-cards">
         {animals.map(animal => 
           <AnimalCard 
             key={animal.id} 

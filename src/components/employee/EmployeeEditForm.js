@@ -18,7 +18,6 @@ const EmployeeEditForm = props => {
     evt.preventDefault()
     setIsLoading(true);
 
-    // This is an edit, so we need the id
     const editedEmployee = {
       id: props.match.params.employeeId,
       name: employee.name,

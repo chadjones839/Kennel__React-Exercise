@@ -5,7 +5,7 @@
     border-radius: 5px; /* 5px rounded corners */
     background: aliceblue;
     margin-bottom: 2em;
-    flex: 0 1 20%;
+    flex: 0 2 20%;
 }
   
 .card-content {
@@ -59,3 +59,43 @@ picture {
 .card button:hover {
     background-color: darkblue;
 }
+
+picture {
+    display: flex;
+    justify-content: center;
+}
+  
+.animalImage {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    border-radius: 2%;
+    padding: 0;
+}
+  
+.section-content {
+    padding: 1.4em;
+}
+  
+.animalContainer-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+  
+.animalCard-content {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 10px;
+    height: 100%;
+    width: auto;
+    border-radius: 10px;
+}
+
+.ownerButtons {
+    margin-top: 20px;
+}
+  
